@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous" />
+    <!-- Custom styles load after Bootstrap so they can override it -->
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Meet Andrew Pike</title>
     <link
       rel="apple-touch-icon"
@@ -31,7 +32,9 @@
     <nav
       class="navbar navbar-expand-lg navbar-dark bg-secondary border-bottom sticky-top shadow-sm py-3">
       <div class="container">
-        <a class="navbar-brand fw-bold text-tertiary" href="#">@AtlantisFury</a>
+        <a class="navbar-brand fw-bold text-info text-white" href="#home"
+          >@AtlantisFury</a
+        >
         <button
           class="navbar-toggler border-0"
           type="button"
@@ -45,10 +48,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto gap-2 text-center pt-3 pt-lg-0">
             <li class="nav-item">
-              <a class="nav-link active fw-medium" href="#">Home</a>
+              <a class="nav-link active fw-medium" href="#home">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link fw-medium" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-medium" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
               <a class="nav-link fw-medium" href="#portfolio">Portfolio</a>
@@ -66,7 +72,9 @@
     </nav>
 
     <main>
-      <section class="py-5 bg-light min-vh-100 d-flex align-items-center">
+      <section
+        id="home"
+        class="py-5 bg-light min-vh-100 d-flex align-items-center">
         <div class="container">
           <div class="row align-items-center g-5">
             <!-- Left Column: Profile Card -->
@@ -109,10 +117,328 @@
         </div>
       </section>
 
-      <section id="contact">
-        <h1>Get in Touch!</h1>
+      <!-- About -->
+      <section id="about" class="py-5">
+        <div class="container">
+          <h2 class="fw-bold mb-4">About Me</h2>
+          <div class="row align-items-center g-5">
+            <div class="col-12 col-md-6">
+              <p class="lead">TODO: One-line professional summary.</p>
+              <p class="text-body-secondary">
+                TODO: Your path into systems analysis, Fogo Island context, and
+                what you're learning at Codecademy.
+              </p>
+              <p class="text-body-secondary">TODO: Optional third paragraph.</p>
+            </div>
+            <div class="col-12 col-md-6">
+              <!-- TODO: add an image, or delete this column and widen the text -->
+              <img
+                src="./assets/20251216APikeProfile.jpg"
+                class="img-fluid rounded shadow"
+                alt="TODO: describe image" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="py-5 bg-light">
+        <div class="container">
+          <h2 class="fw-bold mb-4">Skills</h2>
+          <div class="d-flex flex-wrap justify-content-center gap-4">
+            <div class="card shadow-sm flex-fill">
+              <div class="card-body">
+                <h3 class="card-title h5">Frontend Dev</h3>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">HTML</li>
+                  <li class="list-group-item">CSS</li>
+                  <li class="list-group-item">Bootstrap</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card shadow-sm flex-fill">
+              <div class="card-body">
+                <h3 class="card-title h5">Backend Dev</h3>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">JavaScript</li>
+                  <li class="list-group-item">TODO</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card shadow-sm flex-fill">
+              <div class="card-body">
+                <h3 class="card-title h5">Hospitality Solutions</h3>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">SynXis / Aven Hospitatilty</li>
+                  <li class="list-group-item">IQware IQpms</li>
+                  <li class="list-group-item">IQware IQtrac</li>
+                  <li class="list-group-item">IQware IQRez</li>
+                  <li class="list-group-item">IQware IQpos</li>
+                  <li class="list-group-item">IQware IQapi</li>
+                  <li class="list-group-item">IQware IQbanquet</li>
+                  <li class="list-group-item">Five Star Hotel Systems</li>
+                  <li class="list-group-item">Jonas Club Software</li>
+                  <li class="list-group-item">Square POS</li>
+                  <li class="list-group-item">Square for Restaurants</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card shadow-sm flex-fill">
+              <div class="card-body">
+                <h3 class="card-title h5">Non-Profit Tech</h3>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Salesforce NPSP</li>
+                  <li class="list-group-item">Canada Helps</li>
+                  <li class="list-group-item">TechSoup</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card shadow-sm flex-fill">
+              <div class="card-body">
+                <h3 class="card-title h5">Enterprise Tech</h3>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    Salesforce Certified Adminstrator
+                  </li>
+                  <li class="list-group-item">NetSuite</li>
+                  <li class="list-group-item">QuickBooks</li>
+                  <li class="list-group-item">Microsoft 365</li>
+                  <li class="list-group-item">Control By Web WebRelay</li>
+                  <li class="list-group-item">Honeywell Ascent Compass</li>
+                  <li class="list-group-item">SharePoint Online</li>
+                  <li class="list-group-item">Power Automate</li>
+                  <li class="list-group-item">PowerApps</li>
+                  <li class="list-group-item">Moneris</li>
+                  <li class="list-group-item">Elavon Fusebox</li>
+                  <li class="list-group-item">Elavon</li>
+                  <li class="list-group-item">Stripe</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card shadow-sm flex-fill">
+              <div class="card-body">
+                <h3 class="card-title h5">Development Tools</h3>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Git &amp; GitHub</li>
+                  <li class="list-group-item">Claude Code</li>
+                  <li class="list-group-item">Visual Studio Code</li>
+                  <li class="list-group-item">Powershell</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education & Certifications -->
+      <section id="education" class="py-5">
+        <div class="container">
+          <h2 class="fw-bold mb-4">Education &amp; Certifications</h2>
+          <div class="row g-4">
+            <div class="col-12 col-md-6">
+              <h3 class="h5 mb-3">Education</h3>
+              <div class="card shadow-sm mb-3">
+                <div class="card-body">
+                  <h3 class="card-title h5">
+                    Diploma, Hospitality and Travel Services Management (Events)
+                  </h3>
+                  <h4 class="card-subtitle h6 text-body-secondary mb-2">
+                    Holland College
+                  </h4>
+                  <span class="badge text-bg-primary rounded-pill">2016</span>
+                </div>
+              </div>
+              <div class="card shadow-sm mb-3">
+                <div class="card-body">
+                  <h3 class="card-title h5">
+                    Bachelor Business Administration (Accounting)
+                  </h3>
+                  <h4 class="card-subtitle h6 text-body-secondary mb-2">
+                    Mount Saint Vincent University
+                  </h4>
+                  <span class="badge text-bg-primary rounded-pill">2025</span>
+                </div>
+              </div>
+              <div class="card shadow-sm mb-3">
+                <div class="card-body">
+                  <h3 class="card-title h5">Full-Stack Developer Bootcamp</h3>
+                  <h4 class="card-subtitle h6 text-body-secondary mb-2">
+                    Codecademy
+                  </h4>
+                  <span class="badge text-bg-primary rounded-pill"
+                    >In-Progress</span
+                  >
+                </div>
+              </div>
+              <div class="card shadow-sm mb-3">
+                <div class="card-body">
+                  <h3 class="card-title h5">Trailhead by Salesforce</h3>
+                  <h4 class="card-subtitle h6 text-body-secondary mb-2">
+                    Trailhead
+                  </h4>
+                  <span class="badge text-bg-primary rounded-pill"
+                    >Perpetual</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <h3 class="h5 mb-3">Certifications</h3>
+              <div class="card shadow-sm mb-3">
+                <div class="card-body">
+                  <h3 class="card-title h5">
+                    Salesforce Certified Administrator
+                  </h3>
+                  <h4 class="card-subtitle h6 text-body-secondary mb-2">
+                    Salesforce
+                  </h4>
+                  <a
+                    href="https://www.salesforce.com/trailblazer/andrewpike3"
+                    class="card-link small me-2"
+                    >Credential</a
+                  >
+                  <span class="badge text-bg-primary rounded-pill">2022</span>
+                </div>
+              </div>
+              <div class="card shadow-sm mb-3">
+                <div class="card-body">
+                  <h3 class="card-title h5">
+                    The Leader's Discipline: A Coaching Approach to Leadership
+                  </h3>
+                  <h4 class="card-subtitle h6 text-body-secondary mb-2">
+                    Roy Group Leadership
+                  </h4>
+                  <a
+                    href="https://www.credly.com/badges/cf97e280-08fd-48ce-a715-775957f7af62"
+                    class="card-link small me-2"
+                    >Credential</a
+                  >
+                  <span class="badge text-bg-primary rounded-pill">2023</span>
+                </div>
+              </div>
+              <div class="card shadow-sm mb-3">
+                <div class="card-body">
+                  <h3 class="card-title h5">
+                    Opportunity in Conflict: Engaging Difficult Conversations
+                  </h3>
+                  <h4 class="card-subtitle h6 text-body-secondary mb-2">
+                    Roy Group Leadership
+                  </h4>
+                  <a
+                    href="https://www.credly.com/badges/a9c1c381-29b5-4894-8751-e0067d7bf216"
+                    class="card-link small me-2"
+                    >Credential</a
+                  >
+                  <span class="badge text-bg-primary rounded-pill">2023</span>
+                </div>
+              </div>
+              <div class="card shadow-sm mb-3">
+                <div class="card-body">
+                  <h3 class="card-title h5">Fall Protection</h3>
+                  <h4 class="card-subtitle h6 text-body-secondary mb-2">
+                    Gus Loder
+                  </h4>
+                  <span class="badge text-bg-primary rounded-pill">2024</span>
+                </div>
+              </div>
+              <div class="card shadow-sm mb-3">
+                <div class="card-body">
+                  <h3 class="card-title h5">
+                    Workplace Intermediate First Aid (Canadian Red Cross)
+                  </h3>
+                  <h4 class="card-subtitle h6 text-body-secondary mb-2">
+                    Pretty Safe Enterprises
+                  </h4>
+                  <span class="badge text-bg-primary rounded-pill">2025</span>
+                </div>
+              </div>
+              <div class="card shadow-sm mb-3">
+                <div class="card-body">
+                  <h3 class="card-title h5">Confined Space Entry</h3>
+                  <h4 class="card-subtitle h6 text-body-secondary mb-2">
+                    Gus Loder
+                  </h4>
+                  <span class="badge text-bg-primary rounded-pill">2025</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="portfolio" class="py-5 bg-light">
+        <div class="container">
+          <h2 class="fw-bold mb-4">Portfolio</h2>
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between align-items-stretch gap-4">
+            <div class="card h-100 shadow-sm flex-fill">
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title h5">TODO: Project One</h3>
+                <p class="card-text">TODO: Short description.</p>
+                <div class="mb-3">
+                  <span class="badge text-bg-primary rounded-pill">HTML</span>
+                  <span class="badge text-bg-primary rounded-pill">CSS</span>
+                  <span class="badge text-bg-primary rounded-pill"
+                    >Bootstrap</span
+                  >
+                </div>
+                <div class="mt-auto">
+                  <a href="#" class="btn btn-outline-primary btn-sm">GitHub</a>
+                  <a href="#" class="btn btn-primary btn-sm">Live Demo</a>
+                </div>
+              </div>
+            </div>
+            <div class="card h-100 shadow-sm flex-fill">
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title h5">TODO: Project Two</h3>
+                <p class="card-text">TODO: Short description.</p>
+                <div class="mb-3">
+                  <span class="badge text-bg-primary rounded-pill">TODO</span>
+                </div>
+                <div class="mt-auto">
+                  <a href="#" class="btn btn-outline-primary btn-sm">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="py-5">
+        <div class="container text-center">
+          <h2 class="fw-bold mb-4">Get in Touch</h2>
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="./contact.html" class="btn btn-primary btn-lg">Email Me</a>
+            <a
+              href="https://www.linkedin.com/in/andrew-pike-90570318b/"
+              class="btn btn-outline-secondary btn-lg"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
+            <a
+              href="https://github.com/AtlantisFury"
+              class="btn btn-outline-secondary btn-lg"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
+          </div>
+        </div>
       </section>
     </main>
+
+    <footer class="bg-secondary text-white py-4">
+      <div class="container">
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+          <span> <span id="year">2026</span> Andrew Pike</span>
+          <a href="#home" class="link-light">Back to top</a>
+        </div>
+      </div>
+    </footer>
 
     <!-- Links to bootstrap library scripts under here -->
     <script
